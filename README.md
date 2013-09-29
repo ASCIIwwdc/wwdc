@@ -16,11 +16,8 @@ $ gem install wwdc
 ```bash
 $ wwdc info 228
 
-    228: "Hidden Gems in Cocoa and Cocoa Touch"
-    
+    **228: "Hidden Gems in Cocoa and Cocoa Touch"**
     Learn from the experts about the Cocoa and Cocoa Touch classes you may not even know exist, as well as some very obscure but extremely valuable classes that are favorites of the presenters.
-
-    https://developer.apple.com/wwdc/videos/?id=228
 
 $ wwdc open 228
 
