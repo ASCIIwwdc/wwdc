@@ -26,8 +26,9 @@ $ wwdc open 228
 $ wwdc search UIView
 
     203: "What’s New in Cocoa Touch"
+    UIView property called tintColor. So, Andy talked about the fact that we've taken the tintColor concept and hoisted it all the way up to UIView, right.
 
-    > UIView property called tintColor. So, Andy talked about the fact that we've taken the tintColor concept and hoisted it all the way up to UIView, right.
+    ...
 ```
 
 ## Contact
