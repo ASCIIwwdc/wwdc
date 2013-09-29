@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'commander/import'
+
+require 'wwdc'
+
+HighLine.track_eof = false # Fix for built-in Ruby
+Signal.trap("INT") {} # Suppress backtrace when exiting command
+
+program :version, WWDC::VERSION
+program :description, 'A command-line interface for accessing WWDC session content'
+
+program :help, 'Author', 'Mattt Thompson <m@mattt.me>'
+program :help, 'Website', 'https://github.com/mattt'
+program :help_formatter, :compact
+
+default_command :help
