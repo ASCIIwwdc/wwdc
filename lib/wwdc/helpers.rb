@@ -13,6 +13,7 @@ module WWDC
     end
 
     def describe(session)
+      puts %{\033[1mWWDC #{session['year']}\033[0m}
       puts %{\033[1m#{session['number']}: "#{session['title']}"\033[0m}
       puts session['description']
       puts
