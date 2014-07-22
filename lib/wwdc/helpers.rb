@@ -13,6 +13,7 @@ module WWDC
     end
 
     def describe(session)
+      puts %{\033[1mWWDC #{session['year']}\033[0m}
       puts %{\033[1m#{session['number']}: "#{session['title']}"\033[0m}
       puts session['description']
       puts
@@ -21,7 +22,7 @@ module WWDC
     private
 
     def client
-      @client ||= Excon.new('http://asciiwwdc.com', headers: {'Accept' => "application/json"})
+      @client ||= Excon.new('http://asciiwwdc.com', headers: {'Accept' => "application/json", 'Cache-Control' => "no-cache"})
     end
   end
 end
