@@ -16,12 +16,21 @@ $ gem install wwdc
 ```bash
 $ wwdc info 228
 
+    228: "A Look Inside Presentation Controllers"
+    iOS 8 brings you powerful new means of presenting content within your apps. Hear how presentation controllers were leveraged by UIKit to give you fine grain control using new alert and searching APIs. Dive deep into how presentation controllers work and how you can use them to present content within your app in exciting new ways.
+
+$ wwdc info 228 2013
+
     228: "Hidden Gems in Cocoa and Cocoa Touch"
     Learn from the experts about the Cocoa and Cocoa Touch classes you may not even know exist, as well as some very obscure but extremely valuable classes that are favorites of the presenters.
 
 $ wwdc open 228
 
-    # Opens browser to Apple Developer page with links to slides and video
+    # Opens browser to Apple Developer page with links to slides and video for this year
+
+$ wwdc open 228 2013
+
+    # Opens browser to Apple Developer page with links to slides and video for 2013
 
 $ wwdc search UIView
 
