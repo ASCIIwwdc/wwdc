@@ -14,8 +14,8 @@ Gem::Specification.new do |s|
   s.summary     = "WWDC"
   s.description = "A command-line interface for accessing WWDC session content"
 
-  s.add_dependency "commander", "~> 4.1.2"
-  s.add_dependency "excon", "~> 0.25.3"
+  s.add_dependency "commander", "~> 4.1"
+  s.add_dependency "excon", "~> 0.25"
 
   s.add_development_dependency "rspec"
   s.add_development_dependency "rake"
