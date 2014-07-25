@@ -1,12 +1,13 @@
 command :open do |c|
   c.syntax = 'wwdc open [SESSION]'
   c.summary = 'Open your browser to the Apple Developer Center to view session slides and video'
-  c.description = ''
+  c.option '-y', '--year YEAR', 'WWDC Year'
 
   c.action do |args, options|
-    say_error "Missing session number" and abort unless @number = (Integer(args.first) rescue nil)
+    determine_session!(args, options)
+    determine_year!(args, options)
 
-    session = get(path: "/2013/sessions/#{@number}") do |response|
+    @session = get(path: "/#{@year}/sessions/#{@number}") do |response|
       url = response.headers['Link'].scan(/\<(.+)\>/).flatten.first
       `open "#{url}"`
     end

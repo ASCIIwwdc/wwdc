@@ -1,17 +1,17 @@
 command :search do |c|
   c.syntax = 'wwdc search [QUERY]'
   c.summary = 'Find sessions containing the specified search terms'
-  c.description = ''
+  c.option '-y', '--year YEAR', 'WWDC Year'
 
   c.action do |args, options|
-    @query = args.join(" ")
-    say_error "Missing session number" and abort if @query.empty?
+    determine_query!(args, options)
+    determine_year!(args, options) if options.year
 
-    json = get(path: "search", query: {q: @query})
+    @results = get(path: "search", query: {q: @query, year: @year})['results']
 
-    json['results'].each do |result|
-      describe result
-    end
+    say_warning "No results" and abort if @results.empty?
+
+    describe *@results
   end
 end
 

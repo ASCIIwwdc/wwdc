@@ -1,14 +1,15 @@
 command :info do |c|
-  c.syntax = 'wwdc info [SESSION]'
-  c.summary = 'Get information about a session by its number'
-  c.description = ''
+  c.syntax = 'wwdc info SESSION'
+  c.summary = 'Get information about a session by its number and year'
+  c.option '-y', '--year YEAR', 'WWDC Year'
 
   c.action do |args, options|
-    say_error "Missing session number" and abort unless @number = (Integer(args.first) rescue nil)
+    determine_session!(args, options)
+    determine_year!(args, options)
 
-    session = get(path: "/2013/sessions/#{@number}")
+    @session = get(path: "/#{@year}/sessions/#{@number}")
 
-    describe session
+    describe @session
   end
 end
 
