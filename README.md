@@ -66,11 +66,10 @@ $ wwdc search Swift
 
 ## Contact
 
-Mattt Thompson
+ASCIIwwdc was created by Mattt Thompson and is maintained by Nate Cook.
 
-- http://github.com/mattt
-- http://twitter.com/mattt
-- m@mattt.me
+- https://github.com/ASCIIwwdc
+- https://twitter.com/ASCIIwwdc
 
 ## License
 
