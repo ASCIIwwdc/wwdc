@@ -3,7 +3,7 @@ require 'json'
 require 'rubygems/text'
 
 module WWDC
-  YEARS = (2010..2014)
+  YEARS = (2010..2016)
 
   module Helpers
     include Gem::Text
