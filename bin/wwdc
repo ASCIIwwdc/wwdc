@@ -10,7 +10,7 @@ Signal.trap("INT") {} # Suppress backtrace when exiting command
 program :version, WWDC::VERSION
 program :description, 'A command-line interface for accessing WWDC session content'
 
-program :help, 'Author', 'Mattt Thompson <m@mattt.me>'
+program :help, 'Author', 'Mattt <mattt@me.com>'
 program :help, 'Website', 'https://github.com/mattt'
 program :help_formatter, :compact
 

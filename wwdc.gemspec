@@ -6,9 +6,9 @@ require "wwdc/version"
 Gem::Specification.new do |s|
   s.name        = "wwdc"
   s.license     = "MIT"
-  s.authors     = ["Mattt Thompson"]
-  s.email       = "m@mattt.me"
-  s.homepage    = "http://mattt.me"
+  s.authors     = ["Mattt"]
+  s.email       = "mattt@me.com"
+  s.homepage    = "http://mat.tt"
   s.version     = WWDC::VERSION
   s.platform    = Gem::Platform::RUBY
   s.summary     = "WWDC"
