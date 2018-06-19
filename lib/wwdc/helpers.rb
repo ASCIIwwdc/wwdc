@@ -47,7 +47,7 @@ module WWDC
     end
 
     def client
-      @client ||= Excon.new('http://asciiwwdc.com', headers: {'Accept' => "application/json"})
+      @client ||= Excon.new('https://asciiwwdc.com', headers: {'Accept' => "application/json"})
     end
   end
 end
