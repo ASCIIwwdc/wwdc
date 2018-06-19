@@ -1,4 +1,5 @@
 # WWDC
+
 **A command-line interface for accessing WWDC session content**
 
 [ASCIIwwdc](http://asciiwwdc.com) provides searchable full-text transcripts of WWDC content. `wwdc` builds on its API, [which is documented in the project's README](https://github.com/mattt/asciiwwdc.com#README).
@@ -66,13 +67,10 @@ $ wwdc search Swift
 
 ## Contact
 
-ASCIIwwdc was created by Mattt Thompson and is maintained by Nate Cook.
-
-- https://github.com/ASCIIwwdc
-- https://twitter.com/ASCIIwwdc
+ASCIIwwdc ([@asciiwwdc](https://twitter.com/asciiwwdc))
 
 ## License
 
 WWDC is available under the MIT license. See the LICENSE file for more info.
 
-All content copyright © 2013 Apple Inc. All rights reserved.
+All content copyright © 2010 – 2018 Apple Inc. All rights reserved.
